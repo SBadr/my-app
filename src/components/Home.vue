@@ -47,13 +47,13 @@
     <v-divider class="mx-4"></v-divider>
 
     <v-card-actions>
-      <v-btn
+      <router-link :to="'/details/'+items[3*(k-1)+n-1].id"><v-btn
         color="deep-purple lighten-2"
         text
-        @click="details()"
       >
         Détails
       </v-btn>
+      </router-link>
     </v-card-actions>
   </v-card>
   </v-col>
@@ -64,7 +64,7 @@
 <script>
 
 export default {
-  name: 'HelloWorld',
+  name: 'HomeList',
 
   data: () => ({
     items: []
@@ -74,10 +74,5 @@ export default {
       .then(response => (response.json()))
       .then(data => (this.items = data))
   },
-  methods : () => ({
-    details() {
-      this.$router.push('about/1')
-    }
-  }),
 }
 </script>

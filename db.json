@@ -7,6 +7,7 @@
             "description": "Vernis semi-permanent",
             "details": "Green Flash, un vernis semi-permanent qui se retire comme un vernis classique, formulé à partir d'ingrédients bio-sourcés et une tenue jusqu'à 10 jours !",
             "price": 19.0,
+            "originalPrice": 23.0,
             "img": "https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw0f58785e/images/hi-res/SKU/SKU_2343/558229_swatch.jpg?sw=585&sh=585&sm=fit"
         },
         {
@@ -16,6 +17,7 @@
             "description": "Vernis à ongles",
             "details": "Green, des vernis à ongles formulés à base d'ingrédients bio-sourcés et made in France pour des manucures sans modération !",
             "price": 14.0,
+            "originalPrice": 19.0,
             "img": "https://www.sephora.fr/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw9b8d09fc/images/hi-res/SKU/SKU_2343/558219_swatch.jpg"
         },
         {
@@ -25,6 +27,7 @@
             "description": "Vernis à ongles",
             "details": "Green, des vernis à ongles formulés à base d'ingrédients bio-sourcés et made in France pour des manucures sans modération !",
             "price": 14.0,
+            "originalPrice": 18.0,
             "img": "https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw95872e56/images/hi-res/SKU/SKU_2343/558241_swatch.jpg?sw=585&sh=585&sm=fit"
         },
         {
@@ -34,6 +37,7 @@
             "description": "Vernis à ongles effet gel",
             "details": "Découvrez la nouvelle formule de Dior Vernis, l'emblématique vernis à ongles Dior ultra-brillant qui revêt les ongles d'une couleur couture longue tenue.",
             "price": 29.9,
+            "originalPrice": 32.9,
             "img": "https://www.sephora.fr/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwe9573b8a/images/hi-res/SKU/SKU_3/290594_swatch.jpg"
         },
         {
@@ -43,6 +47,7 @@
             "description": "Vernis à ongles effet gel",
             "details": "Découvrez la nouvelle formule de Dior Vernis, l'emblématique vernis à ongles Dior ultra-brillant qui revêt les ongles d'une couleur couture longue tenue.",
             "price": 29.9,
+            "originalPrice": 35.9,
             "img": "https://www.sephora.fr/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw1bb79085/images/hi-res/SKU/SKU_3/261698_swatch.jpg"
         },
         {
@@ -52,6 +57,7 @@
             "description": "Nail Glow",
             "details": "Sa formule unique ravive les couleurs naturelles de l'ongle : elle blanchit le bord tout en rehaussant la couleur rosée du cœur de l'ongle. En un geste, les ongles sont éclatants et protégés jour après jour.",
             "price": 29.9,
+            "originalPrice": 30.9,
             "img": "https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwf5ca93a1/images/hi-res/SKU/SKU_3/290575_swatch.jpg?sw=585&sh=585&sm=fit"
         },
         {
@@ -61,6 +67,7 @@
             "description": "Big Apple Red Vernis à ongles",
             "details": "Ces vernis à ongles réhaussent l'art de la beauté des ongles. Leur formule professionnelle permet d'obtenir des ongles résistants et plus sains. Ils contiennent des acides aminés naturellement soyeux et un pigment nacré qui produit un éclat inégalable.",
             "price": 16.0,
+            "originalPrice": 18.0,
             "img": "https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw39467237/images/hi-res/SKU/SKU_1/127465_swatch.jpg?sw=585&sh=585&sm=fit"
         },
         {
@@ -70,6 +77,7 @@
             "description": "Vernis À Ongles",
             "details": "OPI s'associe à XBOX, marque emblématique du jeu vidéo collaboratif, pour sa collection Printemps / Eté 2022.",
             "price": 16.0,
+            "originalPrice": 20.0,
             "img": "https://www.sephora.fr/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwf4207274/images/hi-res/SKU/SKU_3057/587629_swatch.jpg"
         },
         {
@@ -79,6 +87,7 @@
             "description": "Vernis À Ongles Longue Durée",
             "details": "Mexico City est l'une des destinations les plus attractives et tendances en termes d'art et de tourisme. Portés par l'héritage culturel mexicain et la modernité de la ville, tous les milieux sociaux se retrouvent pour échanger, créer, partager et innover.",
             "price": 16.0,
+            "originalPrice": 21.0,
             "img": "https://www.sephora.fr/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw6fd8d692/images/hi-res/SKU/SKU_1232/509712_swatch.jpg"
         }
     ]

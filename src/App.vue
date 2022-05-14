@@ -1,35 +1,63 @@
 <template>
   <v-app>
-    <a href="#/">Home</a> |
-  <a href="#/about">About</a> |
-  <a href="#/non-existent-path">Broken Link</a>
-  <component :is="currentView" />
+    <v-navigation-drawer v-model="sidebar" app>
+      <v-list>
+        <v-list-tile
+          v-for="item in menuItems"
+          :key="item.title"
+          :to="item.path">
+          <v-list-tile-action>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>{{ item.title }}</v-list-tile-content>
+        </v-list-tile>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-toolbar app>
+      <span class="hidden-sm-and-up">
+        <v-toolbar-side-icon @click="sidebar = !sidebar">
+        </v-toolbar-side-icon>
+      </span>
+      <v-toolbar-title>
+        <router-link to="/"  style="cursor: pointer">
+          {{ appTitle }}
+        </router-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <v-toolbar-items class="hidden-xs-only">
+        <v-btn
+          flat
+          v-for="item in menuItems"
+          :key="item.title"
+          :to="item.path">
+          <v-icon left dark :icon="item.icon"></v-icon>
+          {{ item.title }}
+        </v-btn>
+      </v-toolbar-items>
+    </v-toolbar>
+  <router-view />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import ProductDetails from './components/ProductDetails.vue'
 
-const routes = {
-  '/': HelloWorld,
-  '/about/:id': ProductDetails
-}
+
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
-  },
-computed: {
-    currentView() {
-      return routes[this.currentPath.slice(1) || '/'] 
-    }
   },
   data: () => {
     return {
-      currentPath: window.location.hash
+      currentPath: window.location.hash,
+      appTitle: 'Vernisoumy',
+      sidebar: false,
+      menuItems: [
+          { title: 'Home', path: '/', icon: 'mdi-home' },
+          { title: 'Contactez-nous', path: '/contact-us', icon: 'mdi-contacts' },
+     ]
     }
   },
   mounted() {

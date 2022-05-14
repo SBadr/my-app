@@ -1,7 +1,16 @@
 <template>
+  <v-flex xs5>
+      <v-card>
+        <v-img id="product-img"
+          :src="item.img"
+          height="100%"
+          class="grey darken-4"
+        ></v-img>
+      </v-card>
+  </v-flex>
   <v-flex xs7  pl-5 class="d-flex text-xs-left">
         <div class="product-summary">
-          <h2 class="product-title">Basic contrast sneakers</h2>
+          <h2 class="product-title">{{item.marque}}</h2>
           <div class="user-ratings">
             <div class="star-rating">
               <span style="width:100%"></span>
@@ -10,17 +19,18 @@
           </div>
           <div class="price">
             <h3>
-            <span>$</span>
-            160.00
+            {{item.price}}
+            <span>€</span>
             </h3>
-            <del>$ 180</del>
+            <del>{{item.originalPrice}} €</del>
           </div>
           <div class="prodect-details">
-            <h3>Product Details {{ $route.params.id }}</h3>
-            <p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem,</p>
+            <h3>{{item.title}}</h3>
+            <h4>{{item.description}}</h4>
+            <p>{{item.details}}</p>
           </div>
           <div class="buy-product">
-            <div class="stock">
+            <div class="stock">   
              <v-btn color="#4CAF50" dark>IN STOCKS
               <v-icon dark right>check_circle</v-icon>
              </v-btn>
@@ -32,7 +42,14 @@
 
 <script>
 export default {
-
+data: () => ({
+    item: {}
+  }),
+  mounted () {
+    fetch('http://localhost:3000/products/'+ this.$route.params.id)
+      .then(response => (response.json()))
+      .then(data => (this.item = data))
+  },
 }
 </script>
 
