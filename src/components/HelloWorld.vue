@@ -1,6 +1,6 @@
 <template id="example-1">
 <v-container class="grey lighten-5">
-    <v-row no-gutters>
+    <v-row no-gutters v-for="k in (items.length/3)" :key="k">
       <v-col
         v-for="n in 3"
         :key="n"
@@ -8,7 +8,6 @@
         sm="4"
       >
   <v-card
-    v-for="item in items" :key="item.message"
     :loading="loading"
     class="mx-auto my-12"
     max-width="374"
@@ -23,10 +22,10 @@
 
     <v-img
       height="250"
-      :src="item.img"
+      :src="items[3*(k-1)+n-1].img"
     ></v-img>
 
-    <v-card-title>{{ item.marque }}</v-card-title>
+    <v-card-title>{{ items[3*(k-1)+n-1].marque }}</v-card-title>
 
     <v-card-text>
       <v-row
@@ -34,15 +33,15 @@
         class="mx-0"
       >
         <div class="grey--text ms-4">
-          {{ item.price }} €
+          {{ items[3*(k-1)+n-1].price }} €
         </div>
       </v-row>
 
       <div class="my-4 text-subtitle-1">
-        {{ item.description }}
+        {{ items[3*(k-1)+n-1].description }}
       </div>
 
-      <div>{{ item.details }}</div>
+      <div>{{ items[3*(k-1)+n-1].details }}</div>
     </v-card-text>
 
     <v-divider class="mx-4"></v-divider>
@@ -75,10 +74,10 @@ export default {
       .then(response => (response.json()))
       .then(data => (this.items = data))
   },
-  methods :{
+  methods : () => ({
     details() {
       this.$router.push('about/1')
     }
-  },
+  }),
 }
 </script>
