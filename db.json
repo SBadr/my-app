@@ -1,0 +1,31 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "marque": "MANUCURIST",
+            "title": "Vernis Green Flash",
+            "description": "Vernis semi-permanent",
+            "details": "Green Flash, un vernis semi-permanent qui se retire comme un vernis classique, formulé à partir d'ingrédients bio-sourcés et une tenue jusqu'à 10 jours !",
+            "price": 19.0,
+            "img": "https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw0f58785e/images/hi-res/SKU/SKU_2343/558229_swatch.jpg?sw=585&sh=585&sm=fit"
+        },
+        {
+            "id": 2,
+            "marque": "DIOR",
+            "title": "Dior Vernis",
+            "description": "Vernis à ongles effet gel",
+            "details": "Découvrez la nouvelle formule de Dior Vernis, l'emblématique vernis à ongles Dior ultra-brillant qui revêt les ongles d'une couleur couture longue tenue.",
+            "price": 29.9,
+            "img": "https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dwf5ca93a1/images/hi-res/SKU/SKU_3/290575_swatch.jpg?sw=585&sh=585&sm=fit"
+        },
+        {
+            "id": 3,
+            "marque": "OPI",
+            "title": "Nail Lacquer",
+            "description": "Big Apple Red Vernis à ongles",
+            "details": "Ces vernis à ongles réhaussent l'art de la beauté des ongles. Leur formule professionnelle permet d'obtenir des ongles résistants et plus sains. Ils contiennent des acides aminés naturellement soyeux et un pigment nacré qui produit un éclat inégalable.",
+            "price": 16.0,
+            "img": "https://www.sephora.fr/dw/image/v2/BCVW_PRD/on/demandware.static/-/Sites-masterCatalog_Sephora/default/dw39467237/images/hi-res/SKU/SKU_1/127465_swatch.jpg?sw=585&sh=585&sm=fit"
+        }
+    ]
+}
