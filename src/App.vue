@@ -41,7 +41,7 @@ export default {
   data: () => {
     return {
       currentPath: window.location.hash,
-      appTitle: 'Vernisoumy',
+      appTitle: 'NailsByOumy',
       sidebar: false,
       menuItems: [
           { title: 'Home', path: '/', icon: 'mdi-home' },

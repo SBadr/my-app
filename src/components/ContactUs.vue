@@ -1,6 +1,6 @@
 <template>
   <v-form v-model="valid">
-    <v-container>
+    <v-container style="margin-top: 56px">
       <v-row>
         <v-col
           cols="12"
@@ -46,10 +46,10 @@
           md="12"
         >
           <v-text-field
-      label="Subject"
-      :rules="rules"
-      hide-details="auto"
-    ></v-text-field>
+            label="Subject"
+            :rules="rules"
+            hide-details="auto"
+          ></v-text-field>
           </v-col>
       </v-row>
       <v-row>
@@ -62,7 +62,7 @@
             >
               <template v-slot:label>
                 <div>
-                  Bio <small>(optional)</small>
+                  Your message <small>(required)</small>
                 </div>
               </template>
             </v-textarea>
