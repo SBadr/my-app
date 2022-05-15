@@ -75,7 +75,7 @@
             >
               <template v-slot:label>
                 <div>
-                  Do you accept the erms and conditions?
+                  Do you accept the terms and conditions?
                 </div>
               </template>
             </v-checkbox>
