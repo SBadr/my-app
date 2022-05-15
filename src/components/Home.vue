@@ -24,16 +24,45 @@
       height="250"
       :src="items[3*(k-1)+n-1].img"
     ></v-img>
+    <v-row>
+      <v-card-title style="width: 100%;">
+        <v-col
+        cols="12"
+        sm="9"
+      >
+      {{ items[3*(k-1)+n-1].marque }}
+      </v-col>
+        
+        <v-col
+        cols="12"
+        sm="3"
+      >
+      <h3 align="right">
+          {{ items[3*(k-1)+n-1].price }} €
+        </h3>
+      </v-col>
+        
+      </v-card-title>
+    </v-row>
 
-    <v-card-title>{{ items[3*(k-1)+n-1].marque }}</v-card-title>
+    
 
     <v-card-text>
       <v-row
         align="center"
         class="mx-0"
       >
-        <div class="grey--text ms-4">
-          {{ items[3*(k-1)+n-1].price }} €
+        <v-rating
+          :model-value="items[3*(k-1)+n-1].rate"
+          color="amber"
+          dense
+          half-increments
+          readonly
+          size="14"
+        ></v-rating>
+
+        <div class="text-grey ms-4">
+          {{ items[3*(k-1)+n-1].rate }}
         </div>
       </v-row>
 
